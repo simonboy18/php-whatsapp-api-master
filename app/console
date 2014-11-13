@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+use CarlosIO\WhatsApp\Command\SendCommand;
+/*
+use CarlosIO\WhatsApp\Command\ListenCommand;
+use CarlosIO\WhatsApp\Command\InteractiveConversationCommand;
+use CarlosIO\WhatsApp\Command\ChangeStatusCommand;
+*/
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->add(new SendCommand);
+/*
+$application->add(new ListenCommand);
+$application->add(new InteractiveConversationCommand);
+$application->add(new ChangeStatusCommand);
+*/
+$application->run();

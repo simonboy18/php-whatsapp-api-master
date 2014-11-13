@@ -1,0 +1,20 @@
+{
+    "name": "carlosio/whatsapp",
+    "type": "library",
+    "description": "A PHP library for sending WhatsApp messages",
+    "keywords": ["whatsapp", "api"],
+    "homepage": "https://github.com/carlosbuenosvinos/php-whatsapp-api",
+    "license": "MIT",
+    "require": {
+        "symfony/console": "2.1.*"
+    },
+    "authors": [
+        {
+            "name": "Carlos Buenosvinos",
+            "email": "hi@carlos.io"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"CarlosIO": "src/"}
+    }
+}
